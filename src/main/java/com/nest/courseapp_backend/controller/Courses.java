@@ -6,5 +6,15 @@ import org.springframework.web.bind.annotation.RestController;
 
 @RestController
 public class Courses {
+    @GetMapping("/")
+    public String viewCourse()
+    {
+        return "viewing course page";
+    }
+    @PostMapping("/add")
+    public String addCourse()
+    {
+        return "Adding course successfully";
+    }
 
 }
